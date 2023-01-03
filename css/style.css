@@ -1,0 +1,288 @@
+:root {
+  /* --hero: #008080; */
+  --nav: DarkSlateBlue;
+  --section: DarkSlateBlue;
+  /* --hero-light: #E0FFFF; */
+  --section-light: Lavender;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Josefin Sans", Serif; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", Serif; 
+  text-shadow: 2px 2px 4px dimgrey;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: DarkSlateBlue;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  /* background-color: DarkSlateBlue; */
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+.navbar {
+  background-color: var(--nav);
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-brand {
+  font-family: "Unbounded", Serif; 
+  font-size: 20px;
+  border: 1px solid white;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px -5px white;
+  }
+  to {
+    box-shadow: 0 0 10px 5px white;
+  }
+}
+
+.nav-link {
+  margin: 0px 10px;
+  padding: 2px;
+  font-family: "Unbounded", Serif; 
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid white;
+}
+
+/* Hero Section CSS */
+.jumbotron {
+  background: linear-gradient(to bottom, var(--section), var(--section-light));
+  border-radius: 0 !important;
+}
+
+.jumbotron .container {
+  background-image: url(../images/coding.jpg);
+  background-repeat: no-repeat;
+  background-size: 95%;
+  border-top-left-radius: 80px 80px;
+  min-height: 300px !important;
+  margin-bottom: 30px;
+}
+
+.jumbotron img {
+  float: left;
+  max-width: 50px;
+  border-radius: 50%;
+}
+
+.jumbotron h1 {
+  position: relative;
+  left: 10px;
+}
+
+.jumbotron .jumbotron-item {
+  background-color: rgba(230,230,230, .8);
+  border-bottom-right-radius: 80px 80px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin-bottom: -50px;
+  min-height: 330px !important;
+}
+
+.jumbotron .lead-highlight {
+  text-transform: uppercase;
+  color: MediumOrchid;
+}
+
+/* Background of all sections */
+.work {
+  /* position: relative; */
+  /* background-color: var(--section-light); */
+  background: linear-gradient(to bottom, var(--section-light), white);
+  padding-top: 20px;
+}
+
+
+/* Works Section CSS */
+.work .card {
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-bottom-right-radius: 40px 40px;
+  min-height: 330px;
+}
+
+.work .card:hover {
+  transform: scale(1.1);
+  transition: all .35s;
+}
+
+.work a:hover{
+  text-decoration-line: none;
+}
+
+.work a {
+  color: DarkSlateBlue;
+}
+
+.work img {
+  height: 130px;
+}
+
+/* Skills CSS */
+.skills {
+  padding: 50px;
+}
+
+.circle-container {
+  width: 24em; height: 24em;
+  border-radius: 50%;
+  display:grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.circle-container img {
+    display: block;
+    /* border:2px solid grey; */
+    background:white;
+    /* border-radius:50%; */
+    text-align:center;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.deg1 {grid-column:3 / span 2; grid-row: 1 /span 2} /* 1 */
+.deg2 {grid-column:1 / span 2; grid-row: 2 /span 2} /* 2 */
+.deg3 {grid-column:5 / span 2; grid-row: 2 /span 2} /* 3 */
+.deg4 {grid-column:3 / span 2; grid-row: 3 /span 2} /* 4 */
+.deg5 {grid-column:1 / span 2; grid-row: 4 /span 2} /* 5 */
+.deg6 {grid-column:5 / span 2; grid-row: 4 /span 2} /* 6 */
+.deg7 {grid-column:3 / span 2; grid-row: 5 /span 2} /* 7 */
+
+
+/*bring the lateral circles closer to the center*/
+.deg2, .deg5{margin:0 -1em 0 1em;}
+.deg3, .deg6{margin: 0 1em 0 -1em}
+
+/* Contact CSS */
+.contact {
+  background: linear-gradient(to top, var(--section), white);
+}
+
+.contact .card {
+  margin-top: 20px;
+  border-bottom-right-radius: 40px 40px;
+  min-height: 150px;
+}
+
+.contact .card a {
+  color: grey; 
+}
+
+.contact .location, .location h5 {
+  color: tomato;
+}
+
+.contact .email, .email h5 {
+  color: #54B4D3;
+}
+
+.contact .mobile, .mobile h5 {
+  color: #E4A11B;
+}
+
+.contact h5 {
+  display:inline;
+  padding-left: 2px;
+}
+
+.fas {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contact .social i {
+  /* background: MediumOrchid; */
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+}
+
+.contact .social .fa-facebook {
+  color: #3b5998;
+  box-shadow: 0 0 7px 7px rgba(59, 89, 152, 0.16);
+}
+
+.contact .social .fa-twitter {
+  box-shadow: 0 0 7px 7px rgba(0, 172, 237, 0.16);
+}
+
+.contact .social .fa-github {
+  box-shadow: 0 0 7px 7px rgba(0, 0, 0, 0.16);
+}
+
+.contact .social .fa-instagram {
+  box-shadow: 0 0 7px 7px rgba(255, 0, 0, 0.16);
+}
+
+.contact .social a {
+  color: var(--section);
+}
+
+.contact .social a:hover {
+  color: white;
+}
+
+.contact .social a:hover > i {
+  box-shadow: 0 3px 6px rgba(255,255,255,0.16), 0 3px 6px rgba(255,255,255,0.23);
+  transform: scale(1.2);
+}
+
+
+/* Footer CSS */
+footer {
+  background-color: var(--section);
+}
+
+footer p {
+  color: WhiteSmoke;
+}
+
+.back-to-top:hover {
+  border-bottom: 1px solid white !important;
+}
+
+/* Responsive effects */
+@media screen and (max-width: 992px) {
+  .jumbotron .container {
+    background-size: 90% 100%;
+  }
+}
