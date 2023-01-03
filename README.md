@@ -37,16 +37,16 @@ N/A
 Screenshots:
 
 Home
-[Home](https://github.com/edithlinpy/bootstrap-portfolio/blob/main/images/bootstrap-portfolio-home.jpg?raw=true)
+![Home](https://github.com/edithlinpy/bootstrap-portfolio/blob/main/images/bootstrap-portfolio-home.jpg?raw=true)
 
 Projects
-[Projects](https://github.com/edithlinpy/bootstrap-portfolio/blob/main/images/bootstrap-portfolio-work.jpg?raw=true)
+![Projects](https://github.com/edithlinpy/bootstrap-portfolio/blob/main/images/bootstrap-portfolio-work.jpg?raw=true)
 
 Skills
-[Skills](https://github.com/edithlinpy/bootstrap-portfolio/blob/main/images/bootstrap-portfolio-skills.jpg?raw=true)
+![Skills](https://github.com/edithlinpy/bootstrap-portfolio/blob/main/images/bootstrap-portfolio-skills.jpg?raw=true)
 
 Contact
-[Contact](https://github.com/edithlinpy/bootstrap-portfolio/blob/main/images/bootstrap-portfolio-contact.jpg?raw=true)
+![Contact](https://github.com/edithlinpy/bootstrap-portfolio/blob/main/images/bootstrap-portfolio-contact.jpg?raw=true)
 
 
 
