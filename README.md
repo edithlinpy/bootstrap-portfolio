@@ -24,7 +24,7 @@ N/A
 
 ## Usage
 
-1. When one of the links in the navigation is clicked then the UI scrolls to the corresponding section.
+1. When one of the links in the navigation bar is clicked then the UI scrolls to the corresponding section.
 
 2. When a user mouse over on the card in the Work section, the card will be enlarged.
 
@@ -32,9 +32,12 @@ N/A
 
 4. When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport. 
 
-[Link to depolyed application](https://edithlinpy.github.io/bootstrap-portfolio/)
+**Link to deployed application:**
 
-Screenshots:
+[Go](https://edithlinpy.github.io/bootstrap-portfolio/)
+
+
+**Screenshots:**
 
 Home
 ![Home](https://github.com/edithlinpy/bootstrap-portfolio/blob/main/images/bootstrap-portfolio-home.jpg?raw=true)
